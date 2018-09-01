@@ -1,0 +1,166 @@
+
+<html>
+<head>
+<style>
+a:hover {
+    background-color: #EB7E37;
+    padding:0.5cm;
+}
+
+.heade
+{
+	margin:0;
+	padding: 1.5em;
+    	color: white;
+    	background-color: #363535;
+    	clear: left;
+ 	font:normal 15px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+}
+
+
+.second
+{
+	margin:0;
+	padding: 0.5em;
+    	color: white;
+    	background-color: #EB7E37;
+    	clear: left;
+	height:143px;
+}
+
+.third
+{
+	margin:0;
+    	color: white;
+    	background-color: #363535;
+    	clear: left;
+	height:385px;
+}
+
+.mid
+{
+background-color:#445673;
+}
+
+div a{
+color: white;
+text-decoration: none;
+font-size: 20px;
+margin-left: 30px;
+margin-right:30px;
+}
+div a.ex {
+    margin-right: 20px;
+    margin-left: 750px;
+      }
+div h1,h2
+{
+padding:0;
+color: white;
+font:normal 35px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+}
+
+footer
+{ 
+	margin:0;
+	padding:0;
+	padding: 0.5em;
+    	color: white;
+    	background-color: #EB7E37;
+    	clear: left;
+    	text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="heade">
+ <a href=# class="ex">Home Page</a>
+<a href=#>Log In </a>
+<a href=aboutus.jsp>  About Us </a>
+</div>
+<div class="second">
+<h1>Internet<span>Banking</span><br> <small>Software</small></h1>
+      
+</div>
+
+<div class="third">
+    <form name="Script_connected" action="Login" method="post" onsubmit="return validate()">
+            
+<CENTER>
+            
+<table style="background-color: teal;border-radius: 10px" WIDTH="30%" >
+
+<br><br>
+<br><br><br>                
+<tr>
+                     
+<td></td>
+                     
+
+</tr>
+                
+            
+<tr>
+                
+<td>Enter User Id  :</td>
+                
+<td><input type="text" name="User_id"></td>
+            
+</tr>
+            
+<tr>
+                
+<td>Enter Password :</td>
+                
+<td><input type="password" name="User_password"></td>
+            
+</tr>
+            
+<tr>
+                
+<td colspan="3">
+<CENTER>
+<input type="submit" value = "Login">
+</center>
+</td>
+            
+</tr>
+            
+<tr>
+                
+<td colspan="2"></td>
+            
+</tr>
+            
+</table>
+            
+</center>
+        
+</form>
+        
+</br></br></br>
+        </br>
+
+
+</div>
+<footer>Chirag_gupta</footer>
+<script>
+function validate()
+{
+    var usrname = document.Script_connected.User_id.value;
+    var psword = document.Script_connected.User_password.value;
+    if (usrname==null || usrname=="")
+    { 
+    alert("Username cannot be blank"); 
+    return false; 
+    }
+    else if(psword==null || psword=="")
+    { 
+    alert("Password cannot be blank"); 
+    return false; 
+    }
+}
+</script>
+</body>
+</html>
